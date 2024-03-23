@@ -1,0 +1,38 @@
+.header {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  height: 56px;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.header__logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--light-color);
+}
+
+.header__nav {
+  margin-left: auto;
+}
+
+.header__item-list {
+  display: flex;
+  gap: 20px;
+}
+
+.header__item {
+  list-style: none;
+}
+
+.header__link {
+  text-decoration: none;
+  color: var(--light-color);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.header__link:hover{
+  color: var(--contrast-color);
+} 
