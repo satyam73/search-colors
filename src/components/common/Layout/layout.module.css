@@ -1,4 +1,6 @@
-.main{
-  min-height: calc(100vh - (2*56px));
-
+.main {
+  padding-top: var(--header-height);
+  min-height: calc(100vh - (56px));
+  background: rgb(216, 226, 255);
+  background: linear-gradient(148deg, rgba(216, 226, 255, 1) 27%, rgba(255, 255, 255, 1) 51%);
 }

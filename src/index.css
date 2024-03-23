@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -18,9 +18,9 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  --dark-color: #334155;
-  --light-color: #f8fafc;
-  --contrast-color:#cbd5e1;
+  --primary-color: #030712;
+  --light-color: #f9fafb;
+  --contrast-color: #d1d5db;
 
   --header-height: 56px;
   --footer-height: 56px;
