@@ -21,4 +21,7 @@
   --dark-color: #334155;
   --light-color: #f8fafc;
   --contrast-color:#cbd5e1;
+
+  --header-height: 56px;
+  --footer-height: 56px;
 }

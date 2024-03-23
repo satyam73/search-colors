@@ -5,7 +5,7 @@ import Layout from './components/common/Layout/Layout';
 export default function App() {
   return (
     <BrowserRouter>
-      <Layout />
+      <Layout>Hello</Layout>
     </BrowserRouter>
   );
 }
