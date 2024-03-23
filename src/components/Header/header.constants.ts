@@ -4,12 +4,12 @@ export const HEADER_ITEMS : HeaderItem[] = [
   {
     id: 'about',
     name: 'About',
-    link: '#about'
+    link: '/#about'
   },
   {
     id: 'services',
     name: 'Services',
-    link: '#services'
+    link: '/#services'
   },
   {
     id: 'search',
