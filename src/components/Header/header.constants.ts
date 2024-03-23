@@ -1,4 +1,6 @@
-export const HEADER_ITEMS = [
+import { HeaderItem } from "./header.types";
+
+export const HEADER_ITEMS : HeaderItem[] = [
   {
     id: 'about',
     name: 'About',
