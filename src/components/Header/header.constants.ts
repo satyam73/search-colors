@@ -13,7 +13,7 @@ export const HEADER_ITEMS : HeaderItem[] = [
   },
   {
     id: 'search',
-    name: 'Searchs',
+    name: 'Search',
     link: '/search'
   },
 ];
