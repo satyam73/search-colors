@@ -15,7 +15,7 @@ export default function Search() {
   const [currentQueryParameters, setSearchParams] = useSearchParams();
   const [colorsToShow, setColorsToShow] = useState<Colors[]>(COLORS);
   const searchInputHandler = debounce(onSearchInput);
-  
+
   function onSearchInput(event: FormEvent<HTMLInputElement>) {
     const eventTarget = event.target as HTMLInputElement;
     const value = eventTarget?.value;
@@ -24,9 +24,11 @@ export default function Search() {
     if (value) newQueryParameters.set('color', value);
 
     setSearchParams(newQueryParameters);
-
+    const lowerCaseValue = value?.toLowerCase();
     const updatedColorsToShow = COLORS.filter(
-      (color) => color.color.includes(value) || color.value.includes(value)
+      (color) =>
+        color.color.includes(lowerCaseValue) ||
+        color.value.includes(lowerCaseValue)
     );
 
     setColorsToShow(updatedColorsToShow);
