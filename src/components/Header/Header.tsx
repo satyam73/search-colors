@@ -6,8 +6,14 @@ import { HEADER_ITEMS } from './header.constants';
 
 import styles from './header.module.css';
 
+const MIN_SCROLLY = 0;
+const SCROLL_DEBOUNCE_TIME = 100;
+const HEADER_BACKGROUND_COLOR = '#D8E2FF';
+
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [headerBackground, setHeaderBackground] =
+    useState<string>('transparent');
 
   useEffect(() => {
     const debouncedWindowResize = debounce(onWindowResize);
@@ -17,10 +23,26 @@ export default function Header() {
         setIsMobileMenuOpen(false);
       }
     }
-    
+
     window.addEventListener('resize', debouncedWindowResize);
 
     return () => window.removeEventListener('resize', debouncedWindowResize);
+  }, []);
+
+  useEffect(() => {
+    const debouncedOnBodyScroll = debounce(onBodyScroll, SCROLL_DEBOUNCE_TIME);
+
+    function onBodyScroll() {
+      if (window.scrollY > MIN_SCROLLY) {
+        setHeaderBackground(HEADER_BACKGROUND_COLOR);
+      } else {
+        setHeaderBackground('transparent');
+      }
+    }
+
+    window.addEventListener('scroll', debouncedOnBodyScroll);
+
+    return () => window.removeEventListener('scroll', debouncedOnBodyScroll);
   }, []);
 
   function closeMobileMenu() {
@@ -46,7 +68,10 @@ export default function Header() {
   ));
 
   return (
-    <header className={styles['header']}>
+    <header
+      className={styles['header']}
+      style={{ background: headerBackground }}
+    >
       <span>
         <Link className={styles['header__logo']} to='/'>
           A
