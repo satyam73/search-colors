@@ -6,12 +6,13 @@
 .search-bar__input {
   width: 100%;
   font-size: 1rem;
-  border-radius: 16px;
+  border-radius: 25px;
   border: none;
   outline: 2px solid var(--gray-500);
   color: var(--gray-500);
-  padding: 10px;
+  padding: 10px 16px;
   font-weight: 500;
+  padding-right: 38px;
   background-color: rgba(255, 255, 255, 0.568);
 }
 
