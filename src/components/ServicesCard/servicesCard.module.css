@@ -1,0 +1,26 @@
+.services-card {
+  height: 200px;
+  width: 200px;
+  border: 2px solid var(--primary-color);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 20px;
+  transition: all 0.7s ease-in-out;
+}
+
+.services-card:hover {
+  box-shadow: inset 200px 180px var(--primary-color);
+  color: var(--light-color);
+}
+
+.services-card__image {
+  height: 50px;
+}
+
+.services-card__info {
+  font-size: 12px;
+}
