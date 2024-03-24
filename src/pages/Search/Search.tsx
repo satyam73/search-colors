@@ -12,7 +12,7 @@ import { debounce } from '@/src/utils';
 import styles from './search.module.css';
 
 export default function Search() {
-  const [currentQueryParameters, setSearchParams] = useSearchParams();
+  const [, setSearchParams] = useSearchParams();
   const [colorsToShow, setColorsToShow] = useState<Colors[]>(COLORS);
   const searchInputHandler = debounce(onSearchInput);
 
