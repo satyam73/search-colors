@@ -1,0 +1,24 @@
+.services-section {
+  background-color: transparent;
+  width: 80%;
+  border-radius: 10px;
+  margin: auto;
+  color: var(--gray-500);
+  display: flex;
+  gap: 40px;
+  flex-direction: column;
+  height: fit-content;
+}
+
+.services-section__heading {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--primary-color);
+}
+
+
+.services-section__main {
+  display: flex;
+  justify-content: space-around;
+}
