@@ -22,3 +22,12 @@
   display: flex;
   justify-content: space-around;
 }
+
+@media (width<=1024px){
+  .services-section__main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
