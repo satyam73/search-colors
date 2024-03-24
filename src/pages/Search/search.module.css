@@ -1,0 +1,9 @@
+.search-page{
+  padding: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 80%;
+  margin: auto;
+  justify-content: center;
+}
