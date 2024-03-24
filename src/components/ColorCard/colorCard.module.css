@@ -11,8 +11,32 @@
   justify-content: center;
   font-weight: 600;
   transition: transform 1s;
+  gap: 10px;
 }
 
-.color-card:hover{
+.color-card:hover {
   transform: scale(1.04);
+}
+
+.color-card__copy-button {
+  all: unset;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  padding: 0 8px;
+  border-radius: 10px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.1s;
+  border: 1px solid white;
+}
+
+.color-card__copy-button:hover{
+  transform: scale(1.1);
+}
+
+.color-card__copy-button img {
+  height: 20px;
 }
