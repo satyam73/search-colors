@@ -2,7 +2,7 @@ import styles from './homeSection.module.css';
 
 export default function HomeSection() {
   return (
-    <section className={styles['home-section']}>
+    <section id='home' className={styles['home-section']}>
       <h1 className={styles['home-section__heading']}>Welcome to AccuKnox!</h1>
       <p className={styles['home-section__info']}>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. At sapiente
