@@ -33,17 +33,24 @@ export default function Search() {
 
     setColorsToShow(updatedColorsToShow);
   }
+  
+  const colorsMapping = colorsToShow.map((color) => (
+    <ColorCard
+      key={color.value}
+      colorCode={color.value}
+      colorName={color.color}
+    />
+  ));
+
+  const isNoColorsFound = colorsToShow.length === 0;
+  const noColorsFoundText = isNoColorsFound && 'No colors found!';
 
   return (
     <div id='search' className={styles['search-page']}>
       <SearchBar inputHandler={searchInputHandler} />
-      {colorsToShow.map((color) => (
-        <ColorCard
-          key={color.value}
-          colorCode={color.value}
-          colorName={color.color}
-        />
-      ))}
+      <div className={styles['search-page__colors']}>
+        {isNoColorsFound ? noColorsFoundText : colorsMapping}
+      </div>
     </div>
   );
 }
