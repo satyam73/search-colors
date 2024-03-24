@@ -57,6 +57,10 @@
   cursor: pointer;
 }
 
+.home-section__cta-button:focus, .home-section__cta-button:focus-visible{
+  outline: 3px solid var(--focus-color);
+}
+
 @media (width<=1024px) {
   .home-section {
     align-items: center;
