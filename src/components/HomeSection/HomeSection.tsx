@@ -12,9 +12,9 @@ export default function HomeSection() {
         Temporibus sint ad illo, porro commodi laudantium quod possimus. Iste
         sequi mollitia provident!
       </p>
-      <button className={styles['home-section__cta-button']}>
+      <a href='#services' className={styles['home-section__cta-button']}>
         See services
-      </button>
+      </a>
     </section>
   );
 }
