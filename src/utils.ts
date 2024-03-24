@@ -3,7 +3,7 @@ export function debounce(callback: Function, interval: number = 500) {
   return function (...args: any) {
     if (timeout) clearTimeout(timeout);
     timeout = setTimeout(() => {
-      callback(args);
+      callback(...args);
     }, interval);
   };
 }
