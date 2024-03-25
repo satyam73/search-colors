@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+body {
+  background: rgb(216, 226, 255);
+  background: linear-gradient(148deg, rgba(216, 226, 255, 1) 27%, rgba(255, 255, 255, 1) 51%);
+}
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
