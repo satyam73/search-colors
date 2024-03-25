@@ -1,3 +1,31 @@
+# Pre-requisite
+
+- Yarn
+- Node
+
+# Setup Project Locally
+
+Clone the repository with command,
+```
+git clone https://github.com/satyam73/search-colors.git
+```
+Checkout to directory(if not in the project directory) with command,
+```
+cd search-colors
+```
+Install dependencies with command,
+```
+yarn install
+```
+Run the project with command,
+```
+yarn dev
+```
+If everything is well and good, the development server will run at, 
+```
+http://localhost:5173/
+```
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
